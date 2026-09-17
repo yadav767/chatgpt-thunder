@@ -4,7 +4,6 @@ import redisClient from "./src/config/redis.js";
 
 await connectDB()
 
-
 await redisClient.connect();
 
 

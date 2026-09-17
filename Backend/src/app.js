@@ -15,6 +15,10 @@ app.use(cors({
 }))
 
 
+app.get("/check",(req,res)=>{
+    res.send("API is running");
+})
+
 app.use("/api/auth",userRouter)
 app.use("/api/chat",chatRouter)
 app.use("/api/message",messageRouter);
